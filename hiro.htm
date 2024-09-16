@@ -1,0 +1,378 @@
+<html lang="ja">
+<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+<title>Asa's Home Link Page</title>
+<meta name="viewport" content="width=device-width">
+
+<style>
+    body {background: #fff;
+        padding: 20px;
+        font-family: sans-serif;
+    }
+ 
+    @media (prefers-color-scheme: dark) {
+    body { background: #000;
+    	font-family: sans-serif;
+    	color: #fff;
+    }
+    b { color: #fff;
+    }
+    a { color: #0bd;
+    }
+    input[type="text"] { 
+        background-color: inherit;
+        color: #333333;
+        -moz-appearance: none;
+    }
+    input[type="button"], input[type="submit"], input[type="option"], input[type="select"], select { 
+        background-color: #222222;
+        color: #ffffff;
+        -moz-appearance: none;
+        font-family: sans-serif;
+    }
+    input[type="text"] { 
+        background-color: #333333;
+        color: #ffffff;
+        -moz-appearance: none;
+    }
+
+}
+</style>
+<body>
+<p>
+<div>
+<table style="float:left;"  border="0" width="450"><tr>
+<FORM NAME="serach" action="https://www.google.co.jp/search">
+<td align="center" width=220>
+<INPUT TYPE="text" NAME="q" SIZE="55">
+</td>
+</tr><tr>
+<td align="center">
+<input type="button" name="Google" value="Google" onClick="kakunin('https://www.google.co.jp/search?q=')">
+<input type="button" name="Infoseek" value="Infoseek" onClick="kakunin('https://websearch.rakuten.co.jp/WebIS?qt=')">
+<input type="button" name="Yahoo" value="Yahoo!" onClick="kakunin('https://search.yahoo.co.jp/search?p=')">
+<input type="button" name="Bing" value="Bing" onClick="kakunin('https://www.bing.com/search?q=')">
+<input type="button" name="Baidu" value="Baidu" onClick="kakunin('https://www.baidu.com/s?ie=utf-8&wd=')">
+<input type="button" name="Wiki" value="Wiki" onClick="kakunin('https://ja.wikipedia.org/wiki/')">
+</td></FORM>
+
+<script>
+function kakunin(url){
+var keyword = document.serach.q.value;
+location.href = url + encodeURI(keyword);
+}
+</script>
+</tr></table>
+<table align=center border="0"  width="450"><tr>
+<tr></tr></table>
+</div>
+
+<div>
+<table align=center border="0" width="100%"><tr>
+<tr></tr></table>
+<table align=center border="0" width="100%"><tr>
+<tr></tr></table>
+</div>
+
+<div>
+<table style="float:left;" border="3" width="450"><tr>
+<form action=""><td align="center">
+    <select id="com" name="com" onChange="location.href='http://'+value;">
+      <option value="192.168.1.1">Network</option>
+      <option value="ntt.setup">NTT PR400</option>
+      <option value="192.168.18.1/">NSD-G1000T</option>
+      <option value="192.168.31.1/">Redmi AX6/AC</option>
+      <option value="router.asus.com/">Asus AC86/68</option>
+    </select>
+</td></form>
+<td align="center" colspan="1">ポータル</td>
+<td align="center" colspan="2"><A HREF="http://news.yahoo.co.jp/">Yahoo!</A> News</td>
+<td align="center">新商品</td>
+</tr><tr>
+
+<form action=""><td align="center" colspan="1">
+    <select id="prov" name="prov" onChange="location.href='https://'+value;">
+      <option value="">Mail</option>
+      <option value="web1.plala.or.jp/cgi-bin/mail/plus/webmail_login.cgi">Plala</option>
+      <option value="mail.yahoo.co.jp/">Yahoo!</option>
+      <option value="mail.google.com/mail/">Gmail</option>
+      <option value="outlook.live.com/mail/">Outlook(jqmail)</option>
+      <option value="mail.ocn.jp/">OCN mail</option>
+      <option value="">Rakuten mail</option>
+      <option value="www.126.com/">126.com</option>
+    </select>
+</td></form>
+
+<td>&nbsp;<A HREF="https://copilot.microsoft.com/">Copilot</A></td>
+<td>&nbsp;<A HREF="http://www.zakzak.co.jp/">ZakZak</A></td>
+<td>&nbsp;<A HREF="https://www3.nhk.or.jp/news/">NHK</A></td>
+<td>&nbsp;<A HREF="http://kakaku.com/" >価格COM</A></td>
+</tr><tr>
+
+<form action=""><td align="center">
+    <select id="prov" name="prov" onChange="location.href='https://'+value;">
+      <option value="">Strage</option>
+      <option value="drive.google.com/drive/my-drive">Google</option>
+      <option value="onedrive.live.com/">One Drive</option>
+      <option value="i.mi.com/">Xiaomi</option>
+      <option value="www.asuswebstorage.com/navigate/">Asus</option>
+      <option value="www.icloud.com/">iCloud</option>
+    </select>
+</td></form>
+
+<td>&nbsp;<A HREF="http://www.yahoo.co.jp/">Yahoo!</A></td>
+<td>&nbsp;<A HREF="https://www.infoseek.co.jp/">Infoseek</A></td>
+<td>&nbsp;<A HREF="http://www.excite.co.jp/">Excite</A></td>
+<td>&nbsp;<A HREF="https://telektlist.com/">Telektlist</A></td>
+</tr><tr>
+
+<form action=""><td align="center">
+    <select id="prov" name="prov" onChange="location.href='https://'+value;">
+      <option value="">Carrier</option>
+      <option value="www.ymobile.jp/support/online/login/">Y!mobile</option>
+      <option value="shop.povo.jp/manage/order">Povo2.0</option>
+      <option value="mypage.bmobile.ne.jp/">Bmobile</option>
+      <option value="www.iijmio.jp/member/">IIJmio</option>
+      <option value="my.softbank.jp/msb/d/top">Softbank</option>
+      <option value="care.linemo.jp/luc/d/top">Linemo</option>
+      <option value="ahamo.com/myportal/home/auth/">Ahamo</option>
+      <option value="www.ocn.ne.jp/">OCN</option>
+      <option value="www.nttdocomo.co.jp/mydocomo/">Docomo</option>
+    </select>
+</td></form>
+
+<td>&nbsp;<A HREF="https://office.live.com/">Office</A></td>
+<td>&nbsp;<A HREF="http://news.livedoor.com/">Livedoor</A></td>
+<td>&nbsp;<A HREF="http://www.oricon.co.jp/">Oricon</A></td>
+<td>&nbsp;<A HREF="https://iphone-mania.jp/">iMania</A></td>
+
+</tr></table>
+
+<table style="float:left;" border="3" width="450"><tr>
+<td colspan="1" align="center"><A HREF="https://maps.google.co.jp/?hl=ja">地図</A></td>
+<form action=""><td colspan="3" align="center">おでかけ 
+    <select id="train" name="train" onChange = "station()">
+      <option value="">時刻表</option>
+      <option value="22740/4800">新柴又</option>
+      <option value="22578/3350">押上</option>
+      <option value="22917/3351">半蔵門</option>
+      <option value="22578/2971">押上</option>
+      <option value="22670/1101">小岩</option>
+      <option value="22673/3341">麹町</option>
+      <option value="flight/search?from=24723&to=22827">富山空港</option>
+    </select>
+    <script language="javascript" type="text/javascript">
+      function station() {
+         var value1 = document.getElementById("train").value;
+         if (value1.indexOf('flight') != -1) {
+  		    location.href = 'https://transit.yahoo.co.jp/timetable/'+ value1;
+		 } else {
+            var date = new Date();
+            var week = date.getDay();
+            var value2 = [4, 1, 1, 1, 1, 1, 2 ][week];
+            location.href = 'https://transit.yahoo.co.jp/timetable/'+ value1+ '?kind='+ value2;
+         }
+      }
+    </script>
+    <A HREF="https://transit.yahoo.co.jp/">ルート</A>
+    &nbsp;&nbsp;<A HREF="http://www.jorudan.co.jp/">J</A>
+    </td></form>
+<td align="center">旅行/娯楽 &nbsp;<A HREF="./h.html">.</A></td>
+</tr><tr>
+<td>&nbsp;<A HREF="https://www.google.co.jp/earth/">Earth</A></td>
+<td>&nbsp;<A HREF="http://www.ana.co.jp/">ANA</A></td>
+<td>&nbsp;<A HREF="https://www.eki-net.com/">JR-E</A> /
+	<A HREF="http://www.jr-odekake.net/">W</A></td>
+<td>&nbsp;<A HREF="https://toyama.vtfm.jp/">BUSロケ</A></td>
+<td>&nbsp;<A HREF="http://1126onsen.info/">ゆらん</A></td>
+</tr><tr>
+
+<td>&nbsp;<A HREF="https://map.baidu.com/">百度</A></td>
+<td>&nbsp;<A HREF="http://www.jal.co.jp/">JAL</A></td>
+<td>&nbsp;<A HREF="http://matrix.itasoftware.com/">Arefare</A></td>
+<td>&nbsp;<A HREF="https://keiseibus.bus-navigation.jp/wgsys/wgp/bus.htm?from=%E5%B0%8F%E5%B2%A9%E9%A7%85%EF%BC%88%E9%87%91%E7%94%BA%EF%BC%89&to=%E6%96%B0%E6%9F%B4%E5%8F%88%E9%A7%85">京成バス</A></td>
+<td>&nbsp;<A HREF="http://tabelog.com/">食べログ</A></td>
+</tr><tr>
+
+<td>&nbsp;<A HREF="http://m.amap.com/">高德</A></td>
+<td>&nbsp;<A HREF="http://www.smile-etc.jp/">ETC</A></td>
+<td>&nbsp;<A HREF="http://www.c-nexco.co.jp/">Nexco</A>
+	<A HREF="http://c-ihighway.jp/web/map_hokuriku.html">i</A></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr></table>
+</div>
+
+<table align=center border="0" width="100%"><tr>
+<tr></tr></table>
+<div>
+
+<table style="float:left;" border="3" width="450"><tr>
+<FORM ACTION="https://finance.yahoo.co.jp/portfolio/detail">
+<td colspan="3" align="center">
+<A HREF="https://finance.yahoo.co.jp/">Y!</A> Finance
+<SELECT NAME="portfolioId">
+<OPTION VALUE="1">主要
+<OPTION VALUE="6">検討
+<OPTION VALUE="3">クォンツ
+<OPTION VALUE="6">輸出
+<OPTION VALUE="14">医薬品
+<OPTION VALUE="4">不動産
+</SELECT>
+<INPUT TYPE="submit" VALUE="株価"></td>
+</FORM>
+
+<td align="center" colspan="2"><A HREF="https://www.ginkou.info/">Bank</a> / <A HREF="https://kakaku.com/card/">Credit</a></td>
+
+</tr><tr>
+<form action=""><td align="center" colspan="1">
+    <select id="year" name="year" onChange="location.href='https://'+value;">
+      <option value="192.168.1.1">証券</option>
+      <option value="www.rakuten-sec.co.jp/">楽天証券</option>
+      <option value="www.sbisec.co.jp">SBI証券</option>
+      <option value="kabu.com/">au証券</option>
+      <option value="www.monex.co.jp/">Monex</option>
+      <option value="hometrade.nomura.co.jp/web/rmfIndexWebAction.do">野村証券</option>
+      <option value="trade.smbcnikko.co.jp/Login/0/login/ipan_web/hyoji/">日興証券</option>
+      <option value="www.matsui.co.jp/login/">松井証券</option>
+    </select>
+</td></form>
+
+<FORM method="GET" action="https://irbank.net/search">
+<td colspan="2" align="center">
+<INPUT TYPE="text" SIZE="12" VALUE="" name="query" placeholder="証券コード、社名" required>
+<button TYPE="submit"><i class="fas fa-search"></i></button>
+</td></FORM>
+
+<form action=""><td align="center" colspan="2">
+    <select id="year" name="year" onChange="location.href='https://'+value;">
+      <option value="192.168.1.1">銀行</option>
+      <option value="www.netbk.co.jp/">住信SBI銀行</option>
+      <option value="www.jibunbank.co.jp/">auじぶん銀行</option>
+      <option value="www.rakuten-bank.co.jp/">楽天銀行</option>
+      <option value="www.aeonbank.co.jp/">イオン銀行</option>
+      <option value="www.rakuten-bank.co.jp/jrebank/">JRE Bank</option>
+      <option value="moneykit.net/">Sony銀行</option>
+      <option value="www.paypay-bank.co.jp/">PayPay銀行</option>
+      <option value="www.jp-bank.japanpost.jp/">ゆうちょ銀行</option>
+      <option value="www.shinseibank.com/">新生銀行</option>
+      <option value="www.smtb.jp/">三住信託銀行</option>
+      <option value="direct.bk.mufg.jp/">三菱UFJ</option>
+    </select>
+</td></form>
+</tr><tr>
+<td>&nbsp;<A HREF="http://minkabu.jp/">みん株</A></td>
+<td>&nbsp;<A HREF="https://adr-stock.com/">ADR</A></td>
+<td>&nbsp;<A HREF="https://www.release.tdnet.info/inbs/I_main_00.html">開示</A></td>
+<form action=""><td align="center" colspan="2">
+    <select id="year" name="year" onChange="location.href='https://'+value;">
+      <option value="192.168.1.1">Card</option>
+      <option value="www.eposcard.co.jp/">EPOS</option>
+      <option value="www.jcb.co.jp">JCB(JAL)</option>
+      <option value="www.kddi-fs.com/">au PAY</option>
+      <option value="www.smbc-card.com/memx/web_meisai/top/index.html">SMBC</option>
+      <option value="www.aeon.co.jp/">AEONセレクト</option>
+      <option value="www.paypay-card.co.jp/">PayPay</option>
+      <option value="www.jreast.co.jp/card/">View(JRE)</option>
+      <option value="www.jal-globalwallet.com/">Jal Global Wallet</option>
+      <option value="www.smbc-card.com/prepaid/index.jsp">ANAプリペイ</option>
+      <option value="netanswerplus.saisoncard.co.jp/">Saison</option>
+      <option value="d-card.jp/">d Card</option>
+    </select>
+</td></form>
+</tr><tr>
+<td>&nbsp;<A HREF="https://jp.kabumap.com/">クォンツ</A></td>
+<td>&nbsp;<A HREF="https://www.traders.co.jp/ipo/">IPO</A>
+	<A HREF="https://ipokabu.net/yotei/">s</A></td>
+<td>&nbsp;<A HREF="http://kabutan.jp/disclosures/?kubun=j">自己株</A></td>
+<td>&nbsp;<A HREF="https://diamond.jp/zai">Zai</A></td>
+<td>&nbsp;<A HREF="https://www.dcplan.co.jp/dcpsweb/rx.appstart">確拠年金</A></td>
+</tr></table>
+
+<table style="float:left;" border="3" width="450"><tr>
+<form action=""><td colspan="2" align="center">ポイント
+    <select id="Cardup" name="Cardup" onChange="location.href='https://'+value;">
+      <option value="192.168.1.1">Card Up</option>
+      <option value="tamaru.eposcard.co.jp/">EPOS</option>
+      <option value="pointupmall.com/">SMBC V</option>
+      <option value="www.a-q-f.com/openpc/USA0000S01.do">不滅Pt</option>
+    </select>
+</td></form>
+<td  colspan="3"align="center">通販</td>
+</tr><tr>
+
+<td>&nbsp;<A HREF="http://hapitas.jp/">ハピタス</A></td>
+<td>&nbsp;<A HREF="https://www.club-ntt-west.com/cn-w/auth/">ClubNtt</A></td>
+<td>&nbsp;<A HREF="http://voi.0101.co.jp/voi/index.jsp">丸井</A></td>
+<td>&nbsp;<A HREF="http://www.amazon.co.jp/">amazon</A></td>
+<td>&nbsp;<A HREF="https://www.yodobashi.com/">ヨドバシ</A></td>
+</tr><tr>
+<td>&nbsp;<A HREF="https://moneyforward.com/">MoneyFd</A></td>
+<td>&nbsp;<A HREF="http://smt.docomo.ne.jp/">dmenu</A></td>
+<td>&nbsp;<A HREF="http://www.rakuten.co.jp/">楽天</A></td>
+<td>&nbsp;<A HREF="https://jp.shein.com/user/index">SHEIN</A>
+	<A HREF="https://hapitas.jp/item/detail/itemid/82851/apn/search">H</A></td>
+<td>&nbsp;<A HREF="https://www.temu.com/jp">TEMU</A>
+	<A HREF="https://hapitas.jp/item/detail/itemid/87910/apn/search">H</A></td>
+</tr><tr>
+<td>&nbsp;<A HREF="https://epotoku.eposcard.co.jp/">EPOS優待</A></td>
+<td>&nbsp;<A HREF="https://www.gpoint.co.jp/">G-point</A></td>
+<td>&nbsp;<A HREF="https://world.taobao.com/">淘宝</A></td>
+<td>&nbsp;<A HREF="https://www.mi.com/index.html">Xiaomi</A></td>
+<td>&nbsp;<A HREF="https://www.furusato-tax.jp/">ふるさと</A></td>
+</tr></table>
+</div>
+
+<table align=center border="0" width="100%"><tr>
+<tr></tr></table>
+
+<div>
+
+<table style="float:left;" border="3" width="450"><tr>
+<tr>
+<td colspan="2" align="center">掲示板</td>
+<td align="center">音楽/読書</td>
+<td colspan="2" align="center"><A HREF="http://www.city.takaoka.toyama.jp/kikaku/0204/kou/MAIN.html">高岡市</A></td>
+</tr><tr>
+<td>&nbsp;<A HREF="https://www.pokepara.jp/kanto/ranking_shop/">ポケパラ</A></td>
+<td>&nbsp;<A HREF="https://bakusai.com/areatop/acode=6/">爆サイ北陸</A></td>
+<td>&nbsp;<A HREF="https://www.audible.co.jp/">Audible</A></td>
+<td>&nbsp;<A HREF="http://takaoka-aeonmall.com/">Aeon</A></td>
+<td>&nbsp;<A HREF="http://www.tohotheater.jp/index.html">東宝</A></td>
+</tr><tr>
+<td>&nbsp;<A HREF="https://www.facebook.com/">facebook</A></td>
+<td>&nbsp;<A HREF="http://www.sugoren.com/">スゴレン</A></td>
+<td>&nbsp;<A HREF="https://www2.nhk.or.jp/gogaku/">NHK語学</A></td>
+<td>&nbsp;<A HREF="https://toyamatome.com/open-close/">富山新店</A></td>
+<td>&nbsp;<A HREF="http://www.toyama-douro.toyama.toyama.jp/rnewest.html">路面</A>
+	<A HREF="http://www.toyama-douro.toyama.toyama.jp/knewest.html">積雪</A></td>
+</tr><tr>
+<td>&nbsp;<A HREF="http://e-omiai.jp/pste000h.php?id=TlAzODE2NiwxMm1RdE5zem9PWTdRLCww">e-omi</A></td>
+<td>&nbsp;<A HREF="http://www.acchan.com/">a-chan</A></td>
+<td>&nbsp;<A HREF="https://www.cmoa.jp/">Cモア</A></td>
+<td>&nbsp;<A HREF="http://www.toyama-west.com/">West</A></td>
+<td>&nbsp;<A HREF="http://www.shufoo.net/shxweb/site/chirashiList.do?lat=36.75231734206866&lng=137.00299307417663">チラシ</A></td>
+</tr>
+</table>
+
+<table style="float:left;" border="3" width="450"><tr>
+<tr>
+<td align="center" colspan="2"><A HREF="https://minkara.carview.co.jp/car/toyota/crown_crossover/">カーライフ</A></td>
+<td align="center" colspan="2">PC</td>
+<td align="center">その他
+	&nbsp;<A HREF="./bookmarks.html">.</A></td>
+</tr><tr>
+<td>&nbsp;<A HREF="http://carview.yahoo.co.jp/">carview</A></td>
+<td>&nbsp;<A HREF="http://gazoo.com/">Gazoo</A>	</td>
+<td>&nbsp;<A HREF="https://support.hp.com/jp-ja/drivers/selfservice/hp-pavilion-24-x000-all-in-one-desktop-pc-series/17200066">HP Support</A></td>
+<td>&nbsp;<A HREF="https://torisetsu.biz/">トリセツ</A></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td>&nbsp;<A HREF="http://www.mycellstar.jp/download">Cellstar</A></td>
+<td>&nbsp;<A HREF="http://kuru-ma.com/page322.html">新車情報</A></td>
+<td>&nbsp;<A HREF="http://netspeed.studio-radish.com/index.html">S.Radish</A></td>
+<td>&nbsp;<A HREF="https://saru.co.jp/tvmaga/drama_shityouritsu2020sp/">視聴率</A></td>
+<td>&nbsp;<A HREF="http://chartpark.com/wti.html">石油価格</A></td>
+</tr>
+</table>
+</div>
+</html>
